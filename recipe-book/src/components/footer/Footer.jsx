@@ -9,7 +9,7 @@ function Footer() {
 
 // Footer 컴포넌트 스타일 정의
 const footerContainerStyle = {
-  padding: "20px 0 3px",
+  padding: "15px 0 10px",
   marginTop: "3rem",
   width: "100%",
   fontSize: "0.8em",

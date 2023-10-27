@@ -9,7 +9,7 @@ import Routing from "../../routes/Routing";
 const titleStyle = {
   textAlign: "center",
   fontFamily: "yg-jalnan",
-  marginBottom: "20px",
+  margin: "20px",
 };
 
 // 페이지 타이틀 링크 스타일

@@ -4,7 +4,7 @@ import "../assets/font.css";
 // 전역 스타일을 정의하는 컴포넌트
 const GlobalStyle = createGlobalStyle`
   :root {
-    --main-color: #ff7028; // 주요 색상 변수 정의
+    --main-color: #F7A256; // 주요 색상 변수 정의
   }
 
   html, body {
@@ -28,7 +28,7 @@ const GlobalStyle = createGlobalStyle`
 
   button {
     padding: 0;
-    background-color: transparent;
+    background-color: #F7A256;
     border: none; // 버튼 초기 스타일 설정
   }
 
@@ -55,9 +55,9 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: "Nanum Gothic", "맑은 고딕", Helvetica, Arial, sans-serif;
     font-size: 14px;
-    line-height: 20px;
+    margin: auto;
     color: #676767;
-    border-top: 30px solid #ffffff; // 넓이 스타일 색상
+    background-color: #F8F0E5;
   }
 
   label {
