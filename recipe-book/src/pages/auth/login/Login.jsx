@@ -40,7 +40,6 @@ function Login() {
 
       if (response.data.result === 'success') {
         console.log('로그인 성공');
-        // 성공한 경우에 대한 처리를 여기에 추가할 수 있습니다.
       } else {
         setError('아이디 또는 비밀번호가 올바르지 않습니다.');
       }
@@ -49,7 +48,7 @@ function Login() {
       setError('아이디 또는 비밀번호가 올바르지 않습니다.');
     }
   };
-  
+
   return (
     <div className="page">
       <div className="titleWrap">
