@@ -20,21 +20,36 @@ function Login() {
   };
 
   const handleLogin = async () => {
+    if (!username && !password) {
+      setError('아이디와 비밀번호를 입력해주세요.');
+      return;
+    }
+
+    if (!username) {
+      setError('아이디를 입력해주세요.');
+      return;
+    }
+
+    if (!password) {
+      setError('비밀번호를 입력해주세요.');
+      return;
+    }
+
     try {
       const response = await axios.post('https://rest-recipe-book-dptb.run.goorm.site/members/login', userData);
 
-      // 로그인 성공 처리 메시지는 성공 but 로그인 아이디 비번 이 틀렸을 때 error처리됨
       if (response.data.result === 'success') {
         console.log('로그인 성공');
+        // 성공한 경우에 대한 처리를 여기에 추가할 수 있습니다.
       } else {
         setError('아이디 또는 비밀번호가 올바르지 않습니다.');
       }
     } catch (error) {
-      // 오류 발생 시 처리
       console.error('로그인 에러:', error);
       setError('아이디 또는 비밀번호가 올바르지 않습니다.');
     }
   };
+  
   return (
     <div className="page">
       <div className="titleWrap">
