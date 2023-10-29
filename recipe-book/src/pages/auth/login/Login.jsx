@@ -48,7 +48,7 @@ function Login() {
       setError('아이디 또는 비밀번호가 올바르지 않습니다.');
     }
   };
-
+  
   return (
     <div className="page">
       <div className="titleWrap">
@@ -63,16 +63,18 @@ function Login() {
         <div className='inputWrap'>
           <input className='input' type='text' value={username} onChange={handleUsernameChange} />
         </div>
-        <div className='errorMessageWrap'>
-          {error && <span className="errorMessage">{error}</span>}
-        </div>
 
         <div className='inputTitle'>비밀번호</div>
         <div className='inputWrap'>
           <input className='input' type="password" value={password} onChange={handlePasswordChange}/>
         </div>
+
+        <div className='errorMessageWrap'>
+          {error && <span className="errorMessage">{error}</span>}
+        </div>
         <div className='errorMessageWrap'></div>
       </div>
+      
       <div>
         <button onClick={handleLogin}>확인</button>
       </div>
